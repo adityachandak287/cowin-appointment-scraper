@@ -1,4 +1,6 @@
+const environment = require("./environment");
 const fs = require("fs");
+const { default: axios } = require("axios");
 
 const fetchFromFile = async () => {
   return new Promise((resolve, reject) => {
@@ -16,14 +18,43 @@ const fetchFromFile = async () => {
   });
 };
 
+const getDateQueryString = (date = new Date()) => {
+  return `${date.getDate()}-${date.getMonth() + 1}-${date.getUTCFullYear()}`;
+};
+
+const addWeeksToDate = (date, numWeeks) => {
+  const newDate = new Date(date);
+  return new Date(newDate.setDate(newDate.getDate() + numWeeks * 7));
+};
+
 const fetchFromAPI = async () => {
-  return null;
+  let currDate = new Date();
+  const checkDates = [];
+
+  for (let i = 0; i < environment.CHECK_WEEKS; i++) {
+    checkDates.push(getDateQueryString(currDate));
+    currDate = addWeeksToDate(currDate, 1);
+  }
+
+  const districtCodes = environment.DISTRICT_ID.split(",");
+
+  const allData = { centers: [] };
+
+  for await (date of checkDates) {
+    for await (districtCode of districtCodes) {
+      const API_URL = `${environment.CALENDAR_BY_DISTRICT_BASE_URL}/?district_id=${districtCode}&date=${date}`;
+      const { data } = await axios.get(API_URL);
+      console.log(data.centers.length, districtCode);
+      allData.centers.push(...data.centers);
+    }
+  }
+
+  return allData;
 };
 
 const fetchData = async () => {
   try {
-    const environment = process.env.NODE_ENV || "prod"; // env | prod
-    switch (environment) {
+    switch (environment.NODE_ENV) {
       case "dev":
         return await fetchFromFile();
       case "prod":
