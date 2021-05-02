@@ -3,7 +3,7 @@ const fs = require("fs");
 const { fetchData } = require("./fetchData");
 const { sendNotifications } = require("./notifications");
 
-(async () => {
+const scrapeData = async () => {
   const data = await fetchData();
 
   const feeTypes = environment.FEE_TYPE.split(",");
@@ -29,11 +29,19 @@ const { sendNotifications } = require("./notifications");
     })
     .filter((center) => center);
 
-  if (environment.OUTPUT_FILTER === "true") {
+  if (environment.OUTPUT_FILES === "true") {
     fs.writeFileSync("data/filter.json", JSON.stringify(filter, null, 2));
   }
 
   if (filter.length > 0) {
     await sendNotifications(filter);
   }
-})();
+};
+
+module.exports = scrapeData;
+
+if (require.main === module) {
+  (async () => {
+    await scrapeData();
+  })();
+}
