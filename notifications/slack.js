@@ -1,7 +1,9 @@
 const environment = require("../environment");
 const axios = require("axios");
+const fs = require("fs");
 
 const getFieldBlock = (text, options = {}) => {
+  return `\n${text}`;
   return {
     type: "mrkdwn",
     text: text,
@@ -10,6 +12,7 @@ const getFieldBlock = (text, options = {}) => {
 };
 
 const getCenterSessionDividerBlocks = () => {
+  return "\n----\n";
   return [
     {
       type: "mrkdwn",
@@ -23,6 +26,7 @@ const getCenterSessionDividerBlocks = () => {
 };
 
 const getSessionVaccineHeaderBlocks = () => {
+  return `\n:alarm_clock: *Sessions*\n`;
   return [
     {
       type: "mrkdwn",
@@ -41,7 +45,7 @@ const createBlocks = (data) => {
       type: "header",
       text: {
         type: "plain_text",
-        text: `:tada: New appointments available as of ${new Date().toLocaleString()}`,
+        text: `:information_source: New appointments available as of ${new Date().toLocaleString()} :information_source:`,
         emoji: true,
       },
     },
@@ -50,24 +54,23 @@ const createBlocks = (data) => {
   data.forEach((center) => {
     const centerBlock = {
       type: "section",
-      fields: [],
+      text: {
+        type: "mrkdwn",
+        text: "",
+      },
     };
-    centerBlock.fields.push(getFieldBlock(`*${center.name}*`));
-    centerBlock.fields.push(
-      getFieldBlock(
-        `${center.district_name} ${center.pincode}, ${center.state_name}`
-      )
+    centerBlock.text.text += getFieldBlock(
+      `*:round_pushpin: ${center.name}* \t\t ${center.district_name} ${center.pincode}, ${center.state_name}`
     );
-    centerBlock.fields.push(...getCenterSessionDividerBlocks());
-    centerBlock.fields.push(...getSessionVaccineHeaderBlocks());
+    // centerBlock.text.text += getCenterSessionDividerBlocks();
+    centerBlock.text.text += getSessionVaccineHeaderBlocks();
 
     center.sessions.forEach((session) => {
-      centerBlock.fields.push(
-        getFieldBlock(
-          `${session.date} - *${session.available_capacity} available*`
-        )
+      centerBlock.text.text += getFieldBlock(
+        `${session.date} - *${session.available_capacity} available* [${
+          session.min_age_limit
+        }+] ${session.vaccine ? "- " + session.vaccine : ""}`
       );
-      centerBlock.fields.push(getFieldBlock(session.vaccine || "-"));
     });
 
     blocks.push({
@@ -81,6 +84,9 @@ const createBlocks = (data) => {
 
 const sendSlackNotification = async (data) => {
   const blocks = createBlocks(data);
+  if (environment.OUTPUT_FILES) {
+    fs.writeFileSync("data/blocks.json", JSON.stringify(blocks, null, 2));
+  }
   try {
     await axios.post(environment.SLACK_HOOK_URL, { blocks });
   } catch (slackError) {
