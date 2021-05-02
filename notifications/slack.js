@@ -1,42 +1,13 @@
 const environment = require("../environment");
 const axios = require("axios");
 const fs = require("fs");
+const { getDateTimeString } = require("../utils");
 
 const getFieldBlock = (text, options = {}) => {
   return `\n${text}`;
-  return {
-    type: "mrkdwn",
-    text: text,
-    ...options,
-  };
 };
-
-const getCenterSessionDividerBlocks = () => {
-  return "\n----\n";
-  return [
-    {
-      type: "mrkdwn",
-      text: "\n--",
-    },
-    {
-      type: "mrkdwn",
-      text: "\n",
-    },
-  ];
-};
-
 const getSessionVaccineHeaderBlocks = () => {
   return `\n:alarm_clock: *Sessions*\n`;
-  return [
-    {
-      type: "mrkdwn",
-      text: "\n*Sessions* :alarm_clock:",
-    },
-    {
-      type: "mrkdwn",
-      text: "\n*Vaccine* :syringe:",
-    },
-  ];
 };
 
 const createBlocks = (data) => {
@@ -45,7 +16,7 @@ const createBlocks = (data) => {
       type: "header",
       text: {
         type: "plain_text",
-        text: `:information_source: New appointments available as of ${new Date().toLocaleString()} :information_source:`,
+        text: `:information_source: New appointments available as of ${getDateTimeString()} :information_source:`,
         emoji: true,
       },
     },
@@ -59,10 +30,11 @@ const createBlocks = (data) => {
         text: "",
       },
     };
+
     centerBlock.text.text += getFieldBlock(
       `*:round_pushpin: ${center.name}* \t\t ${center.district_name} ${center.pincode}, ${center.state_name}`
     );
-    // centerBlock.text.text += getCenterSessionDividerBlocks();
+
     centerBlock.text.text += getSessionVaccineHeaderBlocks();
 
     center.sessions.forEach((session) => {
@@ -76,6 +48,7 @@ const createBlocks = (data) => {
     blocks.push({
       type: "divider",
     });
+
     blocks.push(centerBlock);
   });
 
@@ -84,7 +57,7 @@ const createBlocks = (data) => {
 
 const sendSlackNotification = async (data) => {
   const blocks = createBlocks(data);
-  if (environment.OUTPUT_FILES) {
+  if (environment.OUTPUT_FILES === "true") {
     fs.writeFileSync("data/blocks.json", JSON.stringify(blocks, null, 2));
   }
   try {
