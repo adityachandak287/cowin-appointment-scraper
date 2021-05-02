@@ -1,0 +1,29 @@
+service: cowin-appointment-scraper
+
+frameworkVersion: "2"
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+  stage: dev
+  region: ap-south-1
+  # memorySize: 256
+  # timeout: 6
+
+useDotenv: true
+
+plugins:
+  - serverless-offline
+
+package:
+  patterns:
+    - "!data/**"
+    - "!readme.md"
+    - ".env"
+
+functions:
+  check-appointments:
+    handler: handler.checkAppointments
+    events:
+      - schedule: rate(5 minutes)

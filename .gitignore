@@ -1,6 +1,12 @@
-node_modules
 .env
 
 **/filter.json
 
 **/blocks.json
+
+# package directories
+jspm_packages
+node_modules
+
+# Serverless directories
+.serverless
