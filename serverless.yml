@@ -1,3 +1,5 @@
+org: adityachandak287
+app: cowin-appointment-scraper
 service: cowin-appointment-scraper
 
 frameworkVersion: "2"
