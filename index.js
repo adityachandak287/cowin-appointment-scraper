@@ -33,6 +33,8 @@ const scrapeData = async () => {
     fs.writeFileSync("data/filter.json", JSON.stringify(filter, null, 2));
   }
 
+  console.log(`${filter.length} centers match criteria.`);
+
   if (filter.length > 0) {
     await sendNotifications(filter);
   }
