@@ -1,6 +1,7 @@
 const environment = require("./environment");
 const fs = require("fs");
 const { default: axios } = require("axios");
+const { getISTDateTime } = require("./utils");
 
 const fetchFromFile = async () => {
   return new Promise((resolve, reject) => {
@@ -28,7 +29,7 @@ const addWeeksToDate = (date, numWeeks) => {
 };
 
 const fetchFromAPI = async () => {
-  let currDate = new Date();
+  let currDate = getISTDateTime();
   const checkDates = [];
 
   for (let i = 0; i < environment.CHECK_WEEKS; i++) {

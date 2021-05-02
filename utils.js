@@ -9,4 +9,12 @@ const getDateTimeString = (
   })}${specifyTimezone ? " GMT+0530 IST" : ""}`;
 };
 
-module.exports = { getDateTimeString };
+const getISTDateTime = (date = new Date(), offset = 5.5) => {
+  const dateUTC = date.getTime() + date.getTimezoneOffset() * 60000;
+
+  const dateIST = new Date(dateUTC + 3600000 * offset);
+
+  return dateIST;
+};
+
+module.exports = { getDateTimeString, getISTDateTime };
