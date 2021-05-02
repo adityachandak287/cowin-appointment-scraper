@@ -7,7 +7,7 @@ const environment = {
   MIN_AGE_LIMIT: process.env.MIN_AGE_LIMIT ? +process.env.MIN_AGE_LIMIT : 18,
   NODE_ENV: process.env.NODE_ENV || "prod",
   SLACK_HOOK_URL: process.env.SLACK_HOOK_URL,
-  DISTRICT_ID: process.env.DISTRICT_ID || "395",
+  DISTRICT_ID: process.env.DISTRICT_ID,
   OUTPUT_FILES: process.env.OUTPUT_FILES,
   CHECK_WEEKS: +process.env.CHECK_WEEKS,
 };
