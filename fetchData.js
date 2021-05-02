@@ -44,7 +44,6 @@ const fetchFromAPI = async () => {
     for await (districtCode of districtCodes) {
       const API_URL = `${environment.CALENDAR_BY_DISTRICT_BASE_URL}/?district_id=${districtCode}&date=${date}`;
       const { data } = await axios.get(API_URL);
-      console.log(data.centers.length, districtCode);
       allData.centers.push(...data.centers);
     }
   }
