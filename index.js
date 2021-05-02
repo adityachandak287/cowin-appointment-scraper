@@ -1,11 +1,12 @@
-require("dotenv").config();
+const environment = require("./environment");
 const fs = require("fs");
 const { fetchData } = require("./fetchData");
+const { sendNotifications } = require("./notifications");
 
 (async () => {
   const data = await fetchData();
 
-  const feeTypes = (process.env.FEE_TYPE || "Paid").split(",");
+  const feeTypes = environment.FEE_TYPE.split(",");
 
   const filter = data.centers
     .map((center) => {
@@ -15,7 +16,7 @@ const { fetchData } = require("./fetchData");
 
       const validSessions = center.sessions.filter((session) => {
         return (
-          session.min_age_limit === +process.env.MIN_AGE_LIMIT &&
+          session.min_age_limit === environment.MIN_AGE_LIMIT &&
           session.available_capacity > 0
         );
       });
@@ -30,7 +31,11 @@ const { fetchData } = require("./fetchData");
 
   console.log(filter);
 
-  if (process.env.NODE_ENV === "dev") {
+  if (environment.NODE_ENV === "dev") {
     fs.writeFileSync("data/filter.json", JSON.stringify(filter, null, 2));
+  }
+
+  if (filter.length > 0) {
+    await sendNotifications(filter);
   }
 })();
