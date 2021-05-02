@@ -29,9 +29,7 @@ const { sendNotifications } = require("./notifications");
     })
     .filter((center) => center);
 
-  console.log(filter);
-
-  if (environment.NODE_ENV === "dev") {
+  if (environment.OUTPUT_FILTER === "true") {
     fs.writeFileSync("data/filter.json", JSON.stringify(filter, null, 2));
   }
 
