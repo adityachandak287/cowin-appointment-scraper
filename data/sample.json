@@ -1,0 +1,573 @@
+{
+  "centers": [
+    {
+      "center_id": 561609,
+      "name": "Rajawadi Hospital 2 Age(18-44)",
+      "state_name": "Maharashtra",
+      "district_name": "Mumbai",
+      "block_name": "Ward N Corporation - MH",
+      "pincode": 400077,
+      "lat": 19,
+      "long": 72,
+      "from": "09:00:00",
+      "to": "17:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "b6f7f771-3cdd-4186-b524-5f683283651c",
+          "date": "02-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-05:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 561660,
+      "name": "BKC COVID Facility4 (18-44 Yr)",
+      "state_name": "Maharashtra",
+      "district_name": "Mumbai",
+      "block_name": "Ward H East Corporation - MH",
+      "pincode": 400051,
+      "lat": 19,
+      "long": 72,
+      "from": "09:00:00",
+      "to": "17:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "524ee1c1-550f-4e02-be36-79259175aa30",
+          "date": "02-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-05:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 561578,
+      "name": "Nair Hospital 3 (Age 18 To 44)",
+      "state_name": "Maharashtra",
+      "district_name": "Mumbai",
+      "block_name": "Ward E Corporation - MH",
+      "pincode": 400008,
+      "lat": 18,
+      "long": 72,
+      "from": "09:00:00",
+      "to": "17:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "6c1d687e-a32d-40ca-afef-b5a16855a75d",
+          "date": "02-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-05:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 561567,
+      "name": "Nair Hospital 2 (Age 18 To 44)",
+      "state_name": "Maharashtra",
+      "district_name": "Mumbai",
+      "block_name": "Ward E Corporation - MH",
+      "pincode": 400008,
+      "lat": 18,
+      "long": 72,
+      "from": "09:00:00",
+      "to": "17:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "9bc57c3f-b350-4f0c-86e1-c5c6ef40942c",
+          "date": "02-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-05:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 574933,
+      "name": "SEVEN HIILS 2 Age (18-44)",
+      "state_name": "Maharashtra",
+      "district_name": "Mumbai",
+      "block_name": "Ward K East Corporation - MH",
+      "pincode": 400059,
+      "lat": 19,
+      "long": 72,
+      "from": "09:00:00",
+      "to": "17:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "21f0f643-64fc-427f-90d2-ed0e99162d10",
+          "date": "02-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-05:00PM"
+          ]
+        },
+        {
+          "session_id": "0c4bc740-5429-4359-a2a4-428cf8649e38",
+          "date": "08-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-05:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 561800,
+      "name": "Cooper Hospital 2 Age (18-44)",
+      "state_name": "Maharashtra",
+      "district_name": "Mumbai",
+      "block_name": "Ward K West Corporation - MH",
+      "pincode": 400058,
+      "lat": 19,
+      "long": 72,
+      "from": "09:00:00",
+      "to": "17:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "13362dd2-c290-4e6b-8c27-3ecb6906add2",
+          "date": "02-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-05:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 620921,
+      "name": "RCF Hospital",
+      "state_name": "Maharashtra",
+      "district_name": "Mumbai",
+      "block_name": "Ward M East Corporation - MH",
+      "pincode": 400074,
+      "lat": 19,
+      "long": 72,
+      "from": "09:00:00",
+      "to": "17:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "5a4d175e-a6d1-4ea9-a740-eabbb7f9040c",
+          "date": "03-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-05:00PM"
+          ]
+        },
+        {
+          "session_id": "38778424-bc82-45d1-b804-ce0c81188527",
+          "date": "04-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-05:00PM"
+          ]
+        },
+        {
+          "session_id": "05f01002-4ed7-4ecb-a1e4-9b4eb94a0dda",
+          "date": "05-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-05:00PM"
+          ]
+        },
+        {
+          "session_id": "e63da6c9-6264-47a9-a887-989a1abcca8c",
+          "date": "06-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-05:00PM"
+          ]
+        },
+        {
+          "session_id": "7d0594ef-03f6-46d7-a569-c1d64ef06a74",
+          "date": "07-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-05:00PM"
+          ]
+        },
+        {
+          "session_id": "ad466394-7c57-4b74-9c17-aba7e1b98987",
+          "date": "08-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-05:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 594392,
+      "name": "H N Reliance Hospital",
+      "state_name": "Maharashtra",
+      "district_name": "Mumbai",
+      "block_name": "Ward C Corporation - MH",
+      "pincode": 400004,
+      "lat": 18,
+      "long": 72,
+      "from": "09:00:00",
+      "to": "18:00:00",
+      "fee_type": "Paid",
+      "sessions": [
+        {
+          "session_id": "4f255a6c-1ef2-44b8-900e-0069dead366e",
+          "date": "03-05-2021",
+          "available_capacity": 10,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-06:00PM"
+          ]
+        }
+      ],
+      "vaccine_fees": [
+        {
+          "vaccine": "COVISHIELD",
+          "fee": "680"
+        }
+      ]
+    },
+    {
+      "center_id": 619673,
+      "name": "Mallika Hospital Jogeshwari",
+      "state_name": "Maharashtra",
+      "district_name": "Mumbai",
+      "block_name": "Ward K West Corporation - MH",
+      "pincode": 400102,
+      "lat": 19,
+      "long": 72,
+      "from": "09:00:00",
+      "to": "18:00:00",
+      "fee_type": "Paid",
+      "sessions": [
+        {
+          "session_id": "ef147dc2-842e-4f5e-b1e0-3948d11183f1",
+          "date": "03-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-06:00PM"
+          ]
+        },
+        {
+          "session_id": "3b7fb206-ce80-433e-8ff7-31cfb9e75e0d",
+          "date": "04-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-05:00PM"
+          ]
+        },
+        {
+          "session_id": "8e5c6984-bc65-4915-8f81-9a3f8208a3ca",
+          "date": "06-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-05:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 667108,
+      "name": "Lifeline Hospital Malad",
+      "state_name": "Maharashtra",
+      "district_name": "Mumbai",
+      "block_name": "Ward P North Corporation - MH",
+      "pincode": 400064,
+      "lat": 19,
+      "long": 72,
+      "from": "09:00:00",
+      "to": "18:00:00",
+      "fee_type": "Paid",
+      "sessions": [
+        {
+          "session_id": "fb41bdd0-f68e-4adf-b241-60bb567442d0",
+          "date": "03-05-2021",
+          "available_capacity": 100,
+          "min_age_limit": 45,
+          "vaccine": "",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-06:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 644281,
+      "name": "TATA MEMORIAL HOSPITAL PAREL",
+      "state_name": "Maharashtra",
+      "district_name": "Mumbai",
+      "block_name": "Ward F South Corporation - MH",
+      "pincode": 400012,
+      "lat": 19,
+      "long": 72,
+      "from": "09:00:00",
+      "to": "18:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "7389d216-9b92-444e-aa57-7fe56c1699c6",
+          "date": "05-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-06:00PM"
+          ]
+        },
+        {
+          "session_id": "6bc030aa-1265-4ee4-b579-265613a28d52",
+          "date": "06-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-06:00PM"
+          ]
+        },
+        {
+          "session_id": "9a137f6a-61a1-4640-a258-2201c5e57ffd",
+          "date": "07-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-06:00PM"
+          ]
+        },
+        {
+          "session_id": "f9d69780-d068-47dd-9dc6-1b54c76af5d9",
+          "date": "08-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-06:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 582977,
+      "name": "SK PATIL HOSPITAL 1",
+      "state_name": "Maharashtra",
+      "district_name": "Mumbai",
+      "block_name": "Ward P North Corporation - MH",
+      "pincode": 400097,
+      "lat": 19,
+      "long": 72,
+      "from": "12:00:00",
+      "to": "17:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "75d018b1-117f-426c-b898-62fe2a2dc7d3",
+          "date": "08-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "",
+          "slots": [
+            "12:00PM-01:00PM",
+            "01:00PM-02:00PM",
+            "02:00PM-03:00PM",
+            "03:00PM-05:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 574931,
+      "name": "SEVEN HIILS 1",
+      "state_name": "Maharashtra",
+      "district_name": "Mumbai",
+      "block_name": "Ward K East Corporation - MH",
+      "pincode": 400059,
+      "lat": 19,
+      "long": 72,
+      "from": "09:00:00",
+      "to": "18:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "819ca013-67f5-4074-8614-f49b7c41878f",
+          "date": "08-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-06:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 574935,
+      "name": "SEVEN HIILS 3",
+      "state_name": "Maharashtra",
+      "district_name": "Mumbai",
+      "block_name": "Ward K East Corporation - MH",
+      "pincode": 400059,
+      "lat": 19,
+      "long": 72,
+      "from": "12:00:00",
+      "to": "17:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "4cfc728b-ce00-4e39-9285-8679130fbcb0",
+          "date": "08-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "",
+          "slots": [
+            "12:00PM-01:00PM",
+            "01:00PM-02:00PM",
+            "02:00PM-03:00PM",
+            "03:00PM-05:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 613086,
+      "name": "Sushrut Hospital 1",
+      "state_name": "Maharashtra",
+      "district_name": "Mumbai",
+      "block_name": "Ward M West Corporation - MH",
+      "pincode": 400071,
+      "lat": 19,
+      "long": 72,
+      "from": "09:00:00",
+      "to": "18:00:00",
+      "fee_type": "Paid",
+      "sessions": [
+        {
+          "session_id": "01fa6ed6-dadf-46f9-ad05-ed2f6ef4055e",
+          "date": "08-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-06:00PM"
+          ]
+        }
+      ]
+    }
+  ]
+}
